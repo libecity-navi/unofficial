@@ -1,0 +1,30 @@
+/*--------------------------------------*
+* display
+*--------------------------------------*/
+
+@use "../../foundation/variable"as *;
+
+// フワフワアニメーション
+.u-fluffy {
+  &:hover {
+    animation-name: fluffy;
+    animation-delay: 0s;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes fluffy {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

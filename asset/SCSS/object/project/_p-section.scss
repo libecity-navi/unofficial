@@ -1,0 +1,229 @@
+/*--------------------------------------*
+* p-section
+*--------------------------------------*/
+
+@use "../../foundation/variable"as *;
+
+// トップページ
+.p-top {
+  position: relative;
+  width: 100%;
+  height: 640px;
+  background: url(../../asset/img/bg.jpg) no-repeat center / contain;
+  
+  &__to-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__title {
+    position: absolute;
+    top: 9px;
+    right: 23px;
+    width: 267px;
+    height: 67px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__save {
+    position: absolute;
+    top: 205px;
+    left: 0;
+    width: 109px;
+    height: 109px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__libecty-related {
+    position: absolute;
+    top: 68px;
+    left: 116px;
+    width: 129px;
+    height: 215px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__calendar {
+    position: absolute;
+    top: 83px;
+    right: 5px;
+    width: 99px;
+    height: 99px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__earn {
+    position: absolute;
+    top: 203px;
+    right: 0px;
+    width: 109px;
+    height: 109px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__increase {
+    position: absolute;
+    top: 314px;
+    left: 0px;
+    width: 109px;
+    height: 109px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__beginner {
+    position: absolute;
+    top: 283px;
+    left: 118px;
+    width: 141px;
+    height: 141px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__protect {
+    position: absolute;
+    top: 314px;
+    right: 0px;
+    width: 109px;
+    height: 109px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__gatherings {
+    position: absolute;
+    top: 423px;
+    left: 58px;
+    width: 109px;
+    height: 109px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__consultation {
+    position: absolute;
+    top: 423px;
+    right: 58px;
+    width: 109px;
+    height: 109px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__ovice {
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    width: 107px;
+    height: 107px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__cando {
+    position: absolute;
+    bottom: 0;
+    left: 118px;
+    width: 107px;
+    height: 107px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__utilization {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    width: 107px;
+    height: 107px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__link {
+    background: #FDFDF3;
+    padding: 0 0 20px;
+    text-align: center;
+    a {
+      text-decoration: underline;
+      font-size: $font-18px;
+    }
+  }
+}
+
+// リベシティ関連
+.p-libecity-related {
+  position: absolute;
+  top: 10px;
+  left: 69px;
+  width: 44px;
+  height: 73px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__headline {
+    position: absolute;
+    top: 33px;
+    left: 130px;
+  }
+}
+
+// リベシティ関連以外
+.p-save {
+  position: absolute;
+  top: 0;
+  left: 77px;
+  width: 100px;
+  height: 100px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__headline {
+    position: absolute;
+    top: 33px;
+    left: 183px;
+  }
+}

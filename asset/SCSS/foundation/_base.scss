@@ -1,0 +1,134 @@
+/*--------------------------------------*
+* base
+*--------------------------------------*/
+
+@use "./../foundation/variable"as *;
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  line-height: 1.2;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  color: $color-gray;
+  font-family: "游ゴシック体", "メイリオ", sans-serif;
+  font-weight: 400;
+  font-size: $font-14px;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+video,
+object {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  display: block;
+}
+
+a {
+  color: $color-gray;
+  font-family: "游ゴシック体", "メイリオ", sans-serif;
+  font-weight: 400;
+  font-size: $font-14px;
+  text-decoration: none;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+a:hover img {
+  text-decoration: none;
+  opacity: 0.95;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+h1 {
+  font-family: wanpaku-ruika, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: $font-13px;
+  color: $color-black;
+}
+
+h2 {
+  font-family: wanpaku-ruika, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: $font-25px;
+  color: $color-black;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: $font-17px;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+tr {
+  border: solid 1px;
+  text-align: left;
+}
+
+tbody {
+  width: 100%;
+}
+
+th {
+  border-right: solid 1px;
+}
+
+th,
+td {
+  font-weight: normal;
+  font-size: $font-24px;
+  padding: 10px;
+
+  @include breakpoint(lg) {
+    font-size: $font-17px;
+  }
+
+  @include breakpoint(md) {
+    font-size: $font-14px;
+    padding: 5px;
+  }
+}
+
+// * {
+//   outline: 2px solid red;
+// }

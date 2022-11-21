@@ -1,0 +1,45 @@
+/*--------------------------------------*
+* c-section
+*--------------------------------------*/
+
+@use "../../foundation/variable"as *;
+.c-main {
+  padding-bottom: 50px;
+}
+
+.c-section {
+  background: $color-yellow;
+  width: 343px;
+  margin: 16px auto;
+  padding: 18px 10px;
+}
+
+.c-headline03 {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto 18px;
+
+  &::before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    left: -20px;
+    top: 5px;
+    width: 13px;
+    height: 18px;
+    background-image: url('../../asset/img/headline-before.png');
+    background-size: contain;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    right: -20px;
+    top: 5px;
+    width: 13px;
+    height: 18px;
+    background: url('../../asset/img/headline-after.png') ;
+    background-size: contain;
+  }
+}
